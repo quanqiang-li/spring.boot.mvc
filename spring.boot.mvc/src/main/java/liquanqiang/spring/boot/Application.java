@@ -1,7 +1,9 @@
-package liquanqiang.spring.boot.mvc;
+package liquanqiang.spring.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 启动类
@@ -9,6 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
+@ComponentScan
+@ServletComponentScan
 public class Application {
 
 	public static void main(String[] args) {
