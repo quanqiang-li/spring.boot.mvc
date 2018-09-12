@@ -10,9 +10,12 @@ import javax.servlet.annotation.WebFilter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.filter.GenericFilterBean;
 
+//使用注解,如下,另外加上此注解@ServletComponentScan
+//另外一种方式,使用FilterRegistrationBean和@bean
 @WebFilter(urlPatterns="/*")
 @Order(1)
 public class MyFilter extends GenericFilterBean{
