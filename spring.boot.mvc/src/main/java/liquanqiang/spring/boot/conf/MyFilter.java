@@ -27,6 +27,7 @@ public class MyFilter extends GenericFilterBean{
 			throws IOException, ServletException {
 
 		log.info("begin dofilter");
+		log.info("path{}",request.getServletContext().getContextPath());
 		chain.doFilter(request, response);
 		log.info("end dofilter");
 		
